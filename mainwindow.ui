@@ -16,12 +16,16 @@
     <item row="2" column="1">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLineEdit" name="lineEdit"/>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>PushButton</string>
+         <string>选择图片</string>
         </property>
        </widget>
       </item>
@@ -36,12 +40,16 @@
     <item row="2" column="2">
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QLineEdit" name="lineEdit_2"/>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_3">
         <property name="text">
-         <string>PushButton</string>
+         <string>选择图片</string>
         </property>
        </widget>
       </item>
@@ -55,7 +63,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_2">
         <property name="text">
-         <string>PushButton</string>
+         <string>合成</string>
         </property>
        </widget>
       </item>
