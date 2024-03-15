@@ -37,7 +37,6 @@ void MainWindow::on_pushButton_clicked()
         ui->graphicsView->setScene(scene1);
         ui->graphicsView->show();
         ui->graphicsView->fitInView(scene1->sceneRect(), Qt::KeepAspectRatio);
-
     }
 }
 
@@ -59,7 +58,18 @@ void MainWindow::on_pushButton_3_clicked()
         ui->graphicsView_2->setScene(scene2);
         ui->graphicsView_2->show();
         ui->graphicsView_2->fitInView(scene2->sceneRect(), Qt::KeepAspectRatio);
+    }
+}
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QString path;
+    if(ui->lineEdit_3->text().isEmpty()){
+        path = QFileDialog::getSaveFileName(this, tr("文件保存在"), tr("../demo.png"), tr("images(*.png *jpeg *bmp)"));
+        QPixmap pixmap = QPixmap(ui->graphicsView->size());
+        pixmap = ui->graphicsView->grab();
+        pixmap.save(path);
     }
 }
 
