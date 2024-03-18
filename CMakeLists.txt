@@ -18,8 +18,11 @@ find_package(Qt6 COMPONENTS Network REQUIRED)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
+        form.cpp
         mainwindow.h
+        form.h
         mainwindow.ui
+        form.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

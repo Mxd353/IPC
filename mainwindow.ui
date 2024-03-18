@@ -2,6 +2,14 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>470</height>
+   </rect>
+  </property>
   <property name="minimumSize">
    <size>
     <width>780</width>
@@ -58,10 +66,27 @@
     <item row="4" column="1" colspan="2">
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>保存路径：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QLineEdit" name="lineEdit_3"/>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>自定义</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string>合成</string>
         </property>
