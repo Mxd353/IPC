@@ -16,15 +16,13 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_mix_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_cut_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_change_clicked();
 
-    void on_pushButton_4_clicked();
-
-    void on_lineEdit_3_textChanged(const QString &arg1);
+    void on_backup_clicked();
 
 private:
     Ui::MainWindow *ui;
